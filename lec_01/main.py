@@ -12,11 +12,11 @@ class Parse5Ka:
     Api parser
     '''
 
-    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0'
-
     headers = {
         'Accept': 'application/json',
-        'User-Agent': user_agent,
+        'User-Agent': 'Mozilla/5.0 ' +
+                        '(Windows NT 10.0; Win64; x64; rv:85.0)' +
+                            ' Gecko/20100101 Firefox/85.0',
     }
 
     def __init__(self, start_url: str, products_path: Path):
